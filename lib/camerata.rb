@@ -1,6 +1,6 @@
-require "camerata/version"
+# typed: false
 
 module Camerata
-  class Error < StandardError; end
-  # Your code goes here...
+  require "camerata/version"
+  require "camerata/serializer"
 end

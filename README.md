@@ -2,26 +2,37 @@
 
 A serializer for JSONAPI included with a host of decoupled tools for fast and flexible responses.  
 
+Camerata aims to be opinionated but is designed to be used piece-meal decoupled from existing tools.  
+
 
 ## Upcoming
 
+- DSL
+- Write directly to socket
 - Build out network timeout handler
+- Add support for yajl-ruby
+    - Direct socket connection
+    - Rack Request
+    - Rack Response
+- Metadata
+- Fields
 - Pagination
 - Query management; aggregated query
 - Count
 - Group
 - Sorting
 - Eager loading support
+- Cache loaded relationships
 - Includes
 - Middleware support
 - Command design pattern service integration
 
+- Tests:
+    - Large number of properties
+    - Large property value
+    - Large number or relationships
+    - Relationship-of-relationships
 
-
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/camerata`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
