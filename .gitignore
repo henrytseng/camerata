@@ -1,3 +1,4 @@
+.pryrc
 /.bundle/
 /.yardoc
 /_yardoc/
@@ -6,6 +7,9 @@
 /pkg/
 /spec/reports/
 /tmp/
+/log/
+
+/vendor/cache
 
 # rspec failure tracking
 .rspec_status

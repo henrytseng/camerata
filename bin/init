@@ -1,11 +1,9 @@
 #!/bin/bash
 
 set -euo pipefail
-IFS=$'\n\t'
-set -vx
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 pushd $DIR/..
 trap popd EXIT
 
-bin/init
+bundle install --path=.bundle

@@ -1,6 +1,7 @@
-require "camerata/version"
+# frozen_string_literal: true
+# typed: false
 
 module Camerata
-  class Error < StandardError; end
-  # Your code goes here...
+  require "camerata/version"
+  require "camerata/serializable"
 end
