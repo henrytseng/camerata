@@ -2,9 +2,7 @@
 
 RSpec.describe Camerata::Serializer do
   it 'should initalize' do
-    expect(do
-      described_class.new
-    end).not_to raise(Exception)
+    expect { described_class.new }.not_to raise_error
   end
 
   context 'when enumerable is a single instance member' do

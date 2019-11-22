@@ -80,4 +80,3 @@ What does the word camerata mean?  Why camerata?
 Camerata is a shout out to an analogy coined by Jessica Kerr at RubyConf 2019.  Rubyists are akin to the Florentine Camerata coming together as a community from varying disciplines.  
 
 The modern term camerata refers to a small chamber orchestra or choir.  An API is likewise in many projects the collaboration of several different hands in a harmonizing composition of services.  So deep.  
-
