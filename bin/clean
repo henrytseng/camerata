@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -euo pipefail
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+pushd $DIR/..
+trap popd EXIT
+
+rm -rf ./.bundle
+rm -rf ./coverage
+rm -rf ./pkg

@@ -38,7 +38,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "simplecov"
   spec.add_development_dependency "sorbet"
-  spec.add_dependency "activerecord", ">= 4.1"
   spec.add_dependency "yajl-ruby"
   spec.add_dependency "sorbet-runtime"
 end

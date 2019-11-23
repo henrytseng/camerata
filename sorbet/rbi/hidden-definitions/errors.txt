@@ -35,9 +35,6 @@
 # wrong constant name <RESERVED_120>
 # wrong constant name <RESERVED_121>
 # wrong constant name <RESERVED_122>
-# wrong constant name <RESERVED_123>
-# wrong constant name <RESERVED_124>
-# wrong constant name <RESERVED_125>
 # wrong constant name <RESERVED_12>
 # wrong constant name <RESERVED_13>
 # wrong constant name <RESERVED_14>
@@ -1847,7 +1844,7 @@
 # wrong constant name <static-init>
 # wrong constant name worse_than?
 # wrong constant name +
-# uninitialized constant #<Class:0x000055d98deeca48>::Elem
+# uninitialized constant #<Class:0x000055a4c78c09f8>::Elem
 # wrong constant name candidate?
 # wrong constant name ideal?
 # wrong constant name indeterminate_actual_indexes
@@ -2869,6 +2866,10 @@
 # uninitialized constant WEBrick
 # uninitialized constant WEBrick
 # wrong constant name warn
+# wrong constant name <Class:EncodeError>
+# wrong constant name <Class:ParseError>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
 # wrong constant name <Class:BufError>
 # wrong constant name <Class:DataError>
 # wrong constant name <Class:Deflate>

@@ -7,13 +7,9 @@ Camerata aims to be opinionated but is designed to be used piece-meal decoupled 
 
 ## Upcoming
 
+- Decouple Rails hooks?
+
 - DSL
-- Write directly to socket
-- Build out network timeout handler
-- Add support for yajl-ruby
-    - Direct socket connection
-    - Rack Request
-    - Rack Response
 - Metadata
 - Fields
 - Pagination
@@ -26,7 +22,12 @@ Camerata aims to be opinionated but is designed to be used piece-meal decoupled 
 - Includes
 - Middleware support
 - Command design pattern service integration
-
+- View folders; renderable
+- Write directly to socket
+    - Add support for yajl-ruby
+        - Direct socket connection
+        - Rack Request
+        - Rack Response
 - Tests:
     - Large number of properties
     - Large property value
