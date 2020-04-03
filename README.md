@@ -7,7 +7,7 @@ Camerata aims to be opinionated but is designed to be used piece-meal decoupled 
 
 ## Features
 
-- JSONAPI Spec 1.0 compatible
+- JSONAPI Spec compatible
 - Decoupled architecture and modifiable responses through middleware and hooks
 - Familiar DSL
 - Metadata support
@@ -41,7 +41,7 @@ gem 'camerata'
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 

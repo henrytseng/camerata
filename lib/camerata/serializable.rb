@@ -1,7 +1,7 @@
 # frozen_string_literal: true
+
 # typed: false
 
-require 'yajl'
 require 'camerata/middleware/transform_layer'
 require 'active_support/concern'
 
@@ -15,6 +15,47 @@ module Camerata
       id { |record| record.merge(id: "#{record[:id]}") }
     end
     
+    def build(enumerable, type: :collection)
+      self.public_send(type)
+      
+    end
+
+    # Builds resource identifier
+    def resource_identifier(record_hash)
+      {
+        id: self.class.process_with(:id, record_hash),
+        type: self.class.process_with(:type, record_hash)
+      }
+    end
+
+    # Maps a record to its attributes
+    def resource(record_hash)
+      identifier = resource_identifier(record_hash)
+      
+      # meta
+      # links
+
+      identifier.merge(
+        attributes: self.class.process_with(:attributes, record_hash),
+        relationships: self.class.process_with(:relationships, record_hash),
+        links: self.class.process_with(:links, record_hash)
+      )
+    end
+
+    # Maps a set of records to a response
+    def member(record)
+      record_hash = record.attributes
+      resource(record_hash)
+    end
+
+    # Maps a set of records to a response
+    def collection(enumerable)
+      enumerable.map do |record|
+        record_hash = record.attributes
+        resource(record_hash)
+      end
+    end
+
     class_methods do
       def encoder_method()
         @encoder_method ||= Yajl::Encoder.new
@@ -37,7 +78,6 @@ module Camerata
       def attribute(attr_name, &block)
         @attributes ||= {}
         block = ->{  } unless block_given?
-        
       end
 
       # Sets up attributes
