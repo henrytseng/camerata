@@ -1,8 +1,11 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
 set -euo pipefail
 IFS=$'\n\t'
 set -vx
 
-bundle install
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+pushd $DIR/..
+trap popd EXIT
 
-# Do any other automated setup that you need to do here
+bin/init

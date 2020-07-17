@@ -1,6 +1,5 @@
 # typed: false
+require './spec/spec_helper'
 
-RSpec.describe Camerata::Serializable do
-  describe 'when serializing collection record set' do
-  end
+RSpec.describe Camerata::Serializable::Collection do
 end

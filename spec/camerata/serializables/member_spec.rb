@@ -1,6 +1,5 @@
 # typed: false
+require './spec/spec_helper'
 
-RSpec.describe Camerata::Serializable do
-  describe 'when serializing single member record' do
-  end
+RSpec.describe Camerata::Serializable::Member do
 end

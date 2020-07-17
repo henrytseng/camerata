@@ -1,5 +1,6 @@
 class Book < ActiveRecord::Base
-  has_many :authors, through: :book_authors
+  has_many :books_authors
+  has_many :authors, through: :books_authors
   has_many :tags, as: :entity
 
   validates :title, presence: true
