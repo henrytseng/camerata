@@ -1,15 +1,20 @@
 # Camerata
 
-A serializer for JSONAPI (jsonapi.org) included with a host of decoupled tools for fast and flexible responses.  
+A serializer for JSONAPI (jsonapi.org) included with a host of decoupled tools for fast and flexible responses.
 
-Camerata aims to be opinionated but is designed to be used piece-meal decoupled from existing tools.  
+
+## Design
+
+Camerata aims to be opinionated but is designed to be used piece-meal decoupled from existing tools.  We designed it to go hand-in-hand with ActiveRecord but not require ActiveRecord.
+
+We've also included examples which we use as use cases to test against following the prescribed methods of usage.  If anything in the documentation is missing take a look at the examples first.
 
 
 ## Features
 
-- JSONAPI Spec 1.0 compatible
+- JSONAPI Spec compatible
 - Decoupled architecture and modifiable responses through middleware and hooks
-- Familiar DSL
+- Familiar and easy to debug declarative DSL
 - Metadata support
 - Allows building serialized responses for aggregated queries
 - Validation support
@@ -41,7 +46,7 @@ gem 'camerata'
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 
@@ -74,10 +79,10 @@ The gem is available as open source under the terms of the [MIT License](https:/
 Everyone interacting in the Camerata project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/camerata/blob/master/CODE_OF_CONDUCT.md).
 
 
-## What does Camerata mean?  
+## What does Camerata mean?
 
-What does the word camerata mean?  Why camerata?  
+What does the word camerata mean?  Why camerata?
 
-Camerata is a shout out to an analogy coined by Jessica Kerr at RubyConf 2019.  Rubyists are akin to the Florentine Camerata coming together as a community from varying disciplines.  
+Camerata is a shout out to an analogy coined by Jessica Kerr at RubyConf 2019.  Rubyists are akin to the Florentine Camerata coming together as a community from varying disciplines.
 
-The modern term camerata refers to a small chamber orchestra or choir.  An API is likewise in many projects the collaboration of several different hands in a harmonizing composition of services.  So deep.  
+The modern term camerata refers to a small chamber orchestra or choir.  An API is likewise in many projects the collaboration of several different hands in a harmonizing composition of services.  So deep.

@@ -1,0 +1,30 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - '.pryrc'
+    - '**/*/db/schema.rb'
+
+Metrics/BlockLength:
+  Enabled: true
+  Max: 500
+
+Layout/LineLength:
+  Enabled: true
+  Max: 180
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
