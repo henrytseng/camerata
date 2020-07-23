@@ -7,4 +7,4 @@ pushd $DIR/..
 trap popd EXIT
 
 bundle exec rspec spec
-bundle exec rspec examples/*/spec/**/*_spec.rb
+bundle exec rspec examples/**/*.rb
